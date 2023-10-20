@@ -1,0 +1,44 @@
+El patrón que he captado es que, los radiobutton tienen el id de i + numero, por ejemplo i5
+por cada radio button en la misma pregunta va incrementando de 3 en 3, por ejemplo el segundo
+radiobutton o la segunda opcion tendra un id de i8:
+
+Pregunta 1
+Opcion 1 - Id = i5
+Opcion 2 - Id = i8
+Opcion 3 - Id = i11
+Opcion 4 - Id = i14
+Opcion 5 - Id = i17
+
+Sin embargo, al cambiar de pregunta, el id del primer radiobutton o la primera opción sera
+i + Numero del ID de la ultima opcion + 7, por ejemplo la primera opcion de la pregunta 2 sera de i24,
+despues de ahí, cada opcion incrementará en 3
+
+Pregunta 2
+Opcion 1 - Id = i24
+Opcion 2 - Id = i27
+Opcion 3 - Id = i30
+Opcion 4 - Id = i33
+Opcion 5 - Id = i36
+
+En Resumen, el esquema será así:
+
+Pregunta 1
+Opcion 1 - Id = i5
+Opcion 2 - Id = i8
+Opcion 3 - Id = i11
+Opcion 4 - Id = i14
+Opcion 5 - Id = i17
+
+Pregunta 2
+Opcion 1 - Id = i24
+Opcion 2 - Id = i27
+Opcion 3 - Id = i30
+Opcion 4 - Id = i33
+Opcion 5 - Id = i36
+
+Pregunta 3
+Opcion 1 - Id = i43
+Opcion 2 - Id = i46
+Opcion 3 - Id = i49
+Opcion 4 - Id = i52
+Opcion 5 - Id = i55
